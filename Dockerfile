@@ -7,8 +7,8 @@ MAINTAINER Eric Irwin <eric.irwin@carvana.com>
 RUN mkdir '/home/a'
 ADD / /home/a
 
-RUN nuget restore /home/Carvana.A/Carvana.A.sln &&  xbuild /home/Carvana.A/Carvana.A.sln
+RUN nuget restore /home/a/Carvana.A.sln &&  xbuild /home/a/Carvana.A.sln
 
 EXPOSE 12345
 
-ENTRYPOINT ["mono", "/home/Carvana.A/Carvana.A.Gateway/bin/Debug/Carvana.A.Gateway.exe"]
+ENTRYPOINT ["mono", "/home/a/Carvana.A.Gateway/bin/Debug/Carvana.A.Gateway.exe"]
