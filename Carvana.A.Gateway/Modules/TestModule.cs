@@ -11,7 +11,7 @@ namespace Carvana.A.Gateway.Modules
     {
         public TestModule() : base("/test")
         {
-            Get["/", true] = async (ctx, cancel) => Response.AsJson("Hello from A!");
+            Get["/"] = parameterss => "Hello From A";
         }
     }
 }
