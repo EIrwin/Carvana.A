@@ -9,6 +9,6 @@ ADD / /home/a
 
 RUN nuget restore /home/a/Carvana.A.sln &&  xbuild /home/a/Carvana.A.sln
 
-EXPOSE 12345
+EXPOSE 1234
 
 ENTRYPOINT ["mono", "/home/a/Carvana.A.Gateway/bin/Debug/Carvana.A.Gateway.exe"]
